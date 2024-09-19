@@ -7,8 +7,8 @@ Texto que no es una cita.
 
 > Texto que es una cita.
 
-'''
+```
     <h1>Hola Mundo!</h1>
     <h2>Conceptos Básicos sobre Full Stack
         ¿Qué es Full Stack?</h2>
-'''
+```
