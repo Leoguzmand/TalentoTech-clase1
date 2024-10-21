@@ -23,13 +23,28 @@
     </nav>
 
     <main>
-        <form action="" method="get" target="_blank">
+
+        <!-- Formulario -->
+        <form action="" method="get" target="">
+
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="firstname">Nombre:</label>
+                <input type="text" size="20" id="firstname" placeholder="Ingrese su nombre aquí...">
+                <label for="lastname">Apellido:</label>
+                <input type="text" size="20" id="lastname" placeholder="Ingrese su apellido aquí...">
+
+            </fieldset>
+
+
             <label for="nombre">Nombre: </label>
             <input type="text" size="30" name="nombre" id="nombre">
+
             <label class="suiche">
                 <input type="checkbox" name="esmusico" id="esmusico">
-                <span class="slider round"></span>
+                <span class="slider round">Soy Músico</span>
             </label>
+            <br><br>
             <input type="submit" value="Enviar datos">
         </form>
 
