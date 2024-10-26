@@ -7,14 +7,14 @@
     <title>Contacto</title>
 </head>
 
-<body>
+<body style="background-color: whitesmoke;">
 
     <header>
         <img src="img/clave-de-sol.webp" alt="Símbolo musical de clave de Sol" height="100">
         <h1>Leo Music</h1>
     </header>
 
-    <nav>
+    <nav style="background-color: mediumaquamarine;">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li>Productos</li>
@@ -22,7 +22,7 @@
         </ul>
     </nav>
 
-    <main>
+    <main style="background-color: antiquewhite;">
 
         <!-- Formulario -->
         <form action="show-data.html" method="get" target="_blank">
@@ -47,9 +47,9 @@
                 <label for="birthday">Fecha de nacimiento (dd/mm/aa)</label>
                 <input type="date" name="birthday" id="birthday">
                 <p>Género (radio)
-                    <input type="radio" value="Hombre" id="gender" checked>Hombre
-                    <input type="radio" value="Mujer" id="gender">Mujer
-                    <input type="radio" value="Otro" id="gender">Otro
+                    <input type="radio" name="gender" value="Hombre" id="gender" checked>Hombre
+                    <input type="radio" name="gender" value="Mujer" id="gender">Mujer
+                    <input type="radio" name="gender" value="Otro" id="gender">Otro
                 </p>
             </fieldset>
 
@@ -58,7 +58,7 @@
                 <input type="checkbox" name="conocimientos" id="conocimientos" value="BOOTSTRAP"> Bootstrap
                 <input type="checkbox" name="conocimientos" id="conocimientos" value="Javascript"> Javascript
                 <input type="checkbox" name="conocimientos" id="conocimientos" value="BaseDeDatos"> Base de Datos
-                <input type="checkbox" name="conocimientos" id="conocimientos" value="HTML"> HTML
+                <input type="checkbox" name="conocimientos" id="conocimientos" value="HTML" checked> HTML
                 <input type="checkbox" name="conocimientos" id="conocimientos" value="Python"> Python
                 <input type="checkbox" name="conocimientos" id="conocimientos" value="Django"> Django
             </p>
