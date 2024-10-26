@@ -25,7 +25,7 @@
     <main>
 
         <!-- Formulario -->
-        <form action="" method="get" target="">
+        <form action="show-data.html" method="get" target="_blank">
 
             <fieldset>
                 <legend>Datos Personales</legend>
@@ -33,10 +33,49 @@
                 <input type="text" size="20" id="firstname" placeholder="Ingrese su nombre aquí...">
                 <label for="lastname">Apellido:</label>
                 <input type="text" size="20" id="lastname" placeholder="Ingrese su apellido aquí...">
-
+                <br><br>
+                <label for="street">Dirección:</label>
+                <input type="text" size="30" id="street" placeholder="Ingrese su dirección aquí...">
+                <label for="city">Ciudad:</label>
+                <input type="text" size="20" id="city" value="C.A.B.A.">
+                <label for="zipcode">Código Postal:</label>
+                <input type="text" id="zipcode" size="10" placeholder="Números">
+                <br>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su num de teléfono">
+                <br><br>
+                <label for="birthday">Fecha de nacimiento (dd/mm/aa)</label>
+                <input type="date" name="birthday" id="birthday">
+                <p>Género (radio)
+                    <input type="radio" value="Hombre" id="gender" checked>Hombre
+                    <input type="radio" value="Mujer" id="gender">Mujer
+                    <input type="radio" value="Otro" id="gender">Otro
+                </p>
             </fieldset>
 
+            <p> Conocimientos previos: (checkbox) <br>
+                <input type="checkbox" name="conocimientos" id="conocimientos" value="CSS"> CSS
+                <input type="checkbox" name="conocimientos" id="conocimientos" value="BOOTSTRAP"> Bootstrap
+                <input type="checkbox" name="conocimientos" id="conocimientos" value="Javascript"> Javascript
+                <input type="checkbox" name="conocimientos" id="conocimientos" value="BaseDeDatos"> Base de Datos
+                <input type="checkbox" name="conocimientos" id="conocimientos" value="HTML"> HTML
+                <input type="checkbox" name="conocimientos" id="conocimientos" value="Python"> Python
+                <input type="checkbox" name="conocimientos" id="conocimientos" value="Django"> Django
+            </p>
+            <br>
 
+            <label for="estudios">Nivel de Estudios (select)</label> <br>
+            <select name="estudios" id="estudios">
+                <option value="primaria">Primaria</option>
+                <option value="secundaria">Secundaria</option>
+                <option value="terciario">Terciario</option>
+                <option value="universitario">Universitario</option>
+            </select>
+            <br><br>
+            <label for="comentarios">Comentarios:</label>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="5"></textarea>
+
+            <br>
             <label for="nombre">Nombre: </label>
             <input type="text" size="30" name="nombre" id="nombre">
 
@@ -45,8 +84,11 @@
                 <span class="slider round">Soy Músico</span>
             </label>
             <br><br>
+            <button type="reset">Reset</button>
             <input type="submit" value="Enviar datos">
         </form>
+
+        <p>Si usted hace click en el boton "Enviar", la informacion sera enviada a la pagina "show_data.html".</p>
 
     </main>
 
